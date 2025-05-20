@@ -45,3 +45,7 @@ POSTGRES_DB=death_note_db
 docker-compose up --build
 
 ```
+
+## Puedes acceder a la ruta del proyecto con la url
+
+[PROJECT](http://localhost:3000/)

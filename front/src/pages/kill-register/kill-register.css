@@ -1,0 +1,94 @@
+/* Contenedor principal */
+.deathnote-form-container {
+  max-width: 550px;
+  margin: auto;
+  background-color: #0b0b0b;
+  color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 15px #00eaff;
+  font-family: 'Gothic A1', sans-serif;
+}
+
+/* Título */
+.deathnote-form-container h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #00eaff;
+  text-shadow: 0 0 10px #00eaff;
+  margin-bottom: 1.5rem;
+}
+
+/* Etiquetas */
+.deathnote-form-container label {
+  display: block;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+/* Inputs y textarea */
+.deathnote-form-container input[type="text"],
+.deathnote-form-container input[type="file"],
+.deathnote-form-container textarea {
+  width: 100%;
+  padding: 0.6rem 1rem;
+  background: #111;
+  color: white;
+  border: 1px solid #00eaff;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: 0.2s ease;
+}
+
+.deathnote-form-container input:focus,
+.deathnote-form-container textarea:focus {
+  outline: none;
+  box-shadow: 0 0 8px #00eaff;
+}
+
+/* Textarea específico */
+.deathnote-form-container textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* Error visible */
+.deathnote-error-message {
+  color: #ff4d4d;
+  background-color: #1a0000;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  margin-top: -1rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid #aa0000;
+}
+
+/* Botón */
+.deathnote-form-button {
+  border: none;
+  padding: 0.75rem;
+  width: 100%;
+  font-weight: bold;
+  background-color: #00eaff;
+  color: #000;
+  font-size: 1rem;
+  border-radius: 999px;
+  cursor: pointer;
+  margin-top: 1rem;
+  box-shadow: 0 0 10px #00eaff;
+  transition: all 0.3s ease;
+}
+
+.deathnote-form-button:hover:not(:disabled) {
+  background-color: #00bcd4;
+  box-shadow: 0 0 20px #00eaff;
+}
+
+.deathnote-form-button:disabled {
+  background-color: #444;
+  color: #999;
+  cursor: not-allowed;
+  box-shadow: none;
+}

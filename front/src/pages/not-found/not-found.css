@@ -1,0 +1,27 @@
+.dn-notfound-container {
+  max-width: 500px;
+  margin: 5rem auto;
+  background-color: #0d0d0d;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgb(114, 194, 240);
+  font-family: 'Gothic A1', sans-serif;
+  text-align: center;
+}
+
+.dn-notfound-title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: rgb(255, 255, 255);
+}
+
+.dn-notfound-text {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: #ccc;
+}

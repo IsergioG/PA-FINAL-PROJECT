@@ -1,0 +1,44 @@
+.dn-btn {
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: 'Gothic A1', sans-serif;
+  transition: background-color 0.3s ease, transform 0.2s;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 0 8px rgb(20, 173, 220);
+  color: white;
+}
+
+.dn-btn:hover {
+  background-color: rgb(0, 0, 0);
+  transform: scale(1.05);
+}
+
+/* Tamaños */
+.dn-small {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.75rem;
+}
+
+.dn-medium {
+  font-size: 1rem;
+}
+
+.dn-large {
+  font-size: 1.25rem;
+  padding: 0.75rem 1.5rem;
+}
+
+/* Variantes */
+.dn-primary {
+  background-color: rgb(0, 173, 241);
+}
+
+
+.dn-btn:disabled {
+  background-color: #444;
+  color: #999;
+  box-shadow: none;
+  cursor: not-allowed;
+}

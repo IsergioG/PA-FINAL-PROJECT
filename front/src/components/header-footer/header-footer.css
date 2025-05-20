@@ -1,0 +1,109 @@
+.deathnote-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url("../../assets/wallpaper.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.dark-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(243, 243, 243, 0.6);
+  z-index: 1;
+}
+
+.dn-header {
+  z-index: 2;
+  background-color: #00d9ff;
+  padding: 1rem;
+  position: relative;
+}
+
+.dn-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.dn-logo {
+  text-decoration: none;
+}
+
+.dn-title {
+  color: white;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.dn-menu-toggle {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+.dn-menu {
+  display: flex;
+  gap: 1rem;
+}
+
+.dn-link {
+  text-decoration: none;
+  color: white;
+  background-color: #000;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.dn-link:hover {
+  background-color: #444;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .dn-menu-toggle {
+    display: block;
+  }
+
+  .dn-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+    /* background-color: rgba(0, 0, 0, 0.8); */
+    padding: 0.5rem 0;
+  }
+
+  .dn-menu.open {
+    display: flex;
+  }
+
+  .dn-link {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.dn-main {
+  z-index: 2;
+  flex: 1;
+  padding: 2rem 1rem;
+  /* position: relative; */
+}
+
+.dn-footer {
+  z-index: 2;
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
